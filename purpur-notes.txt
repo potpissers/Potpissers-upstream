@@ -1,0 +1,4 @@
+>kb sync (?) -> user server-side timer for determining kb type rather than gutting air kb. ~ if (timer || p.isOnGround())
+>need to revert DamageTypes exhaustion from 0.1 to 0.3
+>revert hunger status effect
+>water trident particles could be smarter

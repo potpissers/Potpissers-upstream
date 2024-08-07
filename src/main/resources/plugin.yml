@@ -1,4 +1,320 @@
 name: Potpissers-default
 version: '${project.version}'
-main: com.memeasaur.potpissersdefault.Potpissers_default
+main: com.memeasaur.potpissersdefault.PotpissersDefault
 api-version: '1.21'
+permissions:
+  potpissers.helper:
+    description: moderation rank
+    default: false
+  potpissers.watcher:
+    description: moderation rank
+    default: false
+  potpissers.mod:
+    description: moderation rank
+    default: false
+commands:
+  heal:
+    description: heals player arg, or self
+    permission: potpissers.mod
+  feed:
+    description: feeds player arg, or self
+    permission: potpissers.mod
+  freeze:
+    description: freezes player arg
+    permission: potpissers.watcher
+  unfreeze:
+    description: unfreezes player arg
+    permission: potpissers.watcher
+  setdefaultattackspeed:
+    description: sets the default pvp attack speed for players
+    permission: potpissers.mod
+  setworldborder:
+    description: sets the world border radius
+    permission: op
+  setdefaultkitname:
+    description: sets the default kit name
+    permission: op
+  invsee:
+    description: shows pArg inventory
+    permission: potpissers.mod
+  togglemobimmunity:
+    description: makes animals immune to fall damage/lava damage to survive huge worldedit operation
+    permission: op
+  vanish:
+    description: makes self not visible by default
+    permission: potpissers.mod
+  unvanish:
+    description: makes self visible by default
+    permission: potpissers.mod
+  repair:
+    description: repairs args armor
+    permission: potpissers.watcher
+  fly:
+    description: toggles flight
+    permission: potpissers.watcher
+  spectator:
+    description: activates spectator gamemode
+    permission: potpissers.watcher
+  survival:
+    description: activates survival gamemdoe
+    permission: potpissers.watcher
+  visit:
+    description: teleports to player arg
+    permission: potpissers.watcher
+    aliases: [goto]
+  godmode:
+    description: toggles god-mode
+    permission: potpissers.watcher
+  opmute:
+    description: mutes with arg duration
+    permission: potpissers.mod
+  opunmute:
+    description: removes all active arg mutes
+    permission: potpissers.mod
+  mute:
+    description: mutes for 3 minutes
+    permission: potpissers.helper
+  unmute:
+    description: unmutes all mutes below 3 minutes
+    permission: potpissers.helper
+  opban:
+    description: bans player with arg duration
+    permission: op
+  opunban:
+    description: removes all active arg bans
+    permission: op
+  tempban:
+    description: bans for server-determined scaling length
+    permission: potpissers.mod
+  untempban:
+    description: unbans all current arg temp-bans
+    permission: potpissers.mod
+  toggleipexempt:
+    description: toggles a player's uuid being exempt from ip punishments
+    permission: op
+  tpall:
+    description: teleports every player on the server to either commandSender or playerArg
+    permission: op
+  addplayertransaction:
+    description: simulates successful purchase of line item for arg
+    permission: op
+  setplayerstaffrank:
+    description: sets staff rank
+    permission: op
+  chatmod:
+    description: toggles whether a player arg has chat mod perms
+    permission: potpissers.mod
+  stash:
+    description: tool for opped accounts to play normally; stashes current player state after simulated /logout to ensure fairness
+    permission: potpissers.mod
+
+  logout:
+    description: logs players out to avoid spawning combat logger
+    aliases: [ log ]
+  prefix:
+    description: sets/toggles currently active chat prefix
+    aliases: [ setprefix, toggleprefix ]
+  killme:
+    description: kills me (you)
+    aliases: [ mzkill, cubecorekill, pvpkill]
+  helpop:
+    description: messages online staff
+    aliases: [ ophelp ]
+  hcfrevive:
+    description: attempts to revive on hcf's current active server, if available
+    aliases: [ revivehcf ]
+  hcflives:
+    description: checks sender's current hcf life count
+    aliases: [ liveshcf ]
+  mzrevive:
+    description: attempts to revive on mz's current active server, if available
+    aliases: [ revivemz ]
+  mzlives:
+    description: checks sender's current mz life count
+    aliases: [ livesmz ]
+  referral:
+    description: sets user's referral source
+    aliases: [ref, reference, refer]
+
+  getcombattags:
+    description: returns all of the server's current combat tagged players
+    permission: potpissers.watcher
+    aliases: [combattags]
+
+  claimspawn:
+    description: claims spawn
+    permission: op
+  unclaimarea:
+    description: unclaims current selection
+    permission: op
+  unclaimall:
+    description: unclaims all of current claim
+    permission: op
+  claimarena:
+    description: claims/adds new arena
+    permission: op
+  unclaimarena:
+    descriptions: unclaims/removes arg arena
+    permission: op
+  removearena:
+    description: removes arena
+    permission: op
+  claimset1:
+    description: sets first claim corner location
+    permission: op
+  claimset2:
+    description: sets second claim corner location
+    permission: op
+  addarenawarp:
+    description: adds warp to collection of warps for arg arena
+    permission: op
+
+  duel:
+    description: send/accepts duel requests
+    aliases: [1v1, fight, challenge]
+  anon:
+    description: 1v1 matchmaking system
+    aliases: [queue, ladder, match]
+  dequeue:
+    description: leaves all duel request queues, including /duels
+    aliases: [leavequeue, unqueue, unladder, deladder, unmatch, dematch]
+
+  save:
+    description: saves kits preference
+  removeall:
+    description: resets kit preferences
+  load:
+    description: loads kit preference
+  remove:
+    description: removes kit preference
+  loaddefault:
+    description: loads default kit
+  kit:
+    description: activates consumable kit
+    aliases: [kits]
+
+  savedefault:
+    description: saves default kit
+    permission: op
+  removedefault:
+    description: removes default kit
+    permission: op
+  adddefaultpersonalkit:
+    description: adds default personal consumable kit
+    permission: op
+
+  party:
+    description: party system
+    aliases: [p]
+  chat:
+    description: changes active chat (all, party, ally)
+    aliases: [c]
+  rally:
+    description: places rally ping on arg player
+  caution:
+    description: places caution ping on target location (64 block limit)
+  focus:
+    description: places focus ping on arg player/group
+  unfocus:
+    description: places unfocus ping on arg player/group
+
+  spawn:
+    description: warps to spawn
+  warp:
+    description: warps system
+  tpa:
+    description: sends teleport request
+  tpahere:
+    description: sends teleportHere request
+    aliases: [tphere]
+
+  addwarp:
+    description: adds warp
+    permission: op
+    aliases: [warpadd]
+  removewarp:
+    description: removes warp
+    permission: op
+    aliases: [warpremove]
+  addprivatewarp:
+    description: adds private warp
+    permission: op
+  removeprivatewarp:
+    description: removes private warp
+    permission: op
+  privatewarp:
+    description: teleports op to private warp
+    permission: op
+  cubecorechest:
+    description: created auto refilling chest
+    permission: op
+  setlootchest:
+    description: creates loots chest with given loot table at given chest block
+    permission: op
+  unsetlootchest:
+    description: unsets given loot chest
+    permission: op
+
+  cubecoresign:
+    description: creates automatic command entering sign
+    permission: op
+
+  toggleenforcedwhitelist:
+    description: toggles enforced whitelist vanilla setting
+    permission: op
+
+  getservercompass:
+    description: gets custom server switcher compass
+    permission: op
+  getgrapple:
+    description: gets custom item "grapple"
+    permission: op
+
+  getcubecoreswords:
+    description: gets cubecore custom swords
+    permission: op
+
+  addservergateway:
+    description: creates gateway location for server warping
+    permission: op
+  removeservergateway:
+    description: removes gateway location
+    permission: op
+  addlocationgateway:
+    description: creates gateway location for location warping
+    permission: op
+  removelocationgateway:
+    description: removes gateway location
+    permission: op
+
+  spawncannon:
+    description: shoots pArg from spawn cannon
+    permission: op
+  activatesupplydrop:
+    description: activates supply drop event
+    permission: potpissers.mod
+
+  setglobaldeathbanlength:
+    description: sets length of death-ban when players die
+    permission: op
+  oprevive:
+    description: revives player
+    permission: potpissers.mod
+
+  setspawnkit:
+    description: sets the current server's default spawn kit
+    permission: op
+
+  setsharpnesslimit:
+    description: sets cubecore sharpness limit
+    permission: op
+  setprotectionlimit:
+    description: sets cubecore protection limit
+    permission: op
+  setpowerlimit:
+    description: sets cubecore power limit
+    permission: op
+
+  toggleuserunlockedchatprefix:
+    description: toggles user's access to chat prefix
+    permission: op

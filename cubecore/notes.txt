@@ -1,0 +1,111 @@
+test?
+>no elytra glow if rocket during combat tag
+>use client side cooldown on elytra after removal
+>make sure faction names cant reach 36 characters because of strings, actually maybe not because its a uuid
+>test spawn /notspawn collision
+>test waygates enderpearl while tagged
+>test class armor dura
+>fishing rods aren't pulling
+>getting dtr task msgs from faction i disbanded
+>sand only falls in wildy
+>test lingering pot classes
+
+important
+>resistance active stacking (?)
+>should be able to totem and then spam class boost etc
+>combat loggers should continue giving effects
+>handle servers that don't have factiondata still receiving faction messages
+>allow inviting yourself to solo, leaving, and being able to re-join. problematic obviously
+>>maybe use movement spam buffer with shield
+>spawn npcs server.properties (?)
+>show claim in tab menu
+>golden carrot gives night vision + passive night vision below y16 miner
+>use candles as custom items + dyes (?)
+>use sea pickle as a class item
+>make one-upping
+>automatic /stop during off-peak
+>automatic koth starting
+>opple/gapple cd opcommand
+>totem falling not proccing
+>archer class effects make their arrows do it/spawn class lingering where they land
+>Block maturation meme
+>f map sendmultiblockchange
+>add fake name meme to class items
+>make f map if async works
+>getting hit adds 1 to combat tag (?)
+>if kit higher than prot 2 buff arrow damage i guess
+>palace punch interact cancel
+>handling class dura loss with a variable and random chance would be nicer i think (?)
+>handle dark green from enemies tagging teammates
+>teammates can tag allies with ff and chase melee
+>f w all
+>this.client.particleManager.addEmitter(entity, ParticleTypes.TOTEM_OF_UNDYING, 30);
+>make shulker faster in friendly claim
+>force join
+>/ignore
+>handle palace loot
+>tping bypasses miner y 16 meme
+>make blocks only disable dropping above sea level for roads
+>make max repair cost 39 meme work
+>>wind charge: cooldown happens when player is hit -> self is higher cd, other is lower etc
+>make apple recipe
+>make apples easier to farm
+>make fire res and invis timers in serverdata
+>serverdata golden apple cd
+>raidable -> combat loggers dont despawn, offline players become combat loggers, dying loses appropriate percentage of f balance, ...
+    >can't f home, dying loses ender chest contents ...
+    >claim value is factored into the balance from deaths and the base is unclaimed if money runs out, somehow handling the f home coords not being there anymore ...
+    >can't enter spawn, location is public (?)
+>make capping piglin loggers never despawn
+>run the command for each arg meme
+>death signs/ etc
+>Buff traveling villager
+>make faction names also work
+>logging in in class doesn't proc
+>make faction name include (Leader's faction)
+
+>/lff with vouches and devouches etc
+>handle the actual potioneffect of the arrow using gapplecd/harmingcd, which is a huge pain
+>make /sleep and /votenight
+>claims need to re-evaluate when unclaims happen, only allowing unclaimall for now
+>make shulkers not insta break sometimes
+>change lore of nerfed potions in a clean way
+>riptide hit player cd return (?)
+>make elytra only craftable once elytra has been found
+>+ make threshold that unlocks ff4 etc. either dragon or elytra found probably
+>add watcher unmute (?)
+>maybe make the mending nerf only proc if xp is boosted, by tracking xp orbs
+>make refillable kits work
+>make claimcapzone move koth location
+>UNPEARLABLE when entering claim
+>enderpearl cancelling tp is wonky (koth pearlable)
+>bard effect items
+>remove combat tag opcommand
+>rogue grapple goes through teammates
+>from base movement buffer
+>enderpearl name timer meme
+>craft xp bottles
+>make spawner working meme only work on factions of a certain age to mitigate temp factions
+>class item rename cooldown meme
+>archer arrow damage reduce (?)
+>make items dropped in fights only pick-upable by other people in the fight + death drops
+>remove duelitementities
+>add glow ink effect, can be used to see mobs through walls
+>make miner upgrade alerts
+>signchangeevent doesnt fire when sign is placed
+>use interact for sell and buy signs + upstream sign update
+>make slayer tasks for outpost mobs instead of mining
+>repairable koth armor probably a problem if it's bypassing enchant nerf
+>probably need to set player rain to downfall whether it's currently raining or not, it seems like it gets desynced and you can't get client rain
+>just make bukkittask handle method and remove islogin autism
+>make flame trident set on fire
+>one-time use kits also give potion effects (?) gonna use potion itemstacks for now
+>gold ingot/raw helditemstring isnt compatible
+>full reimpliment 1.7 repairing
+>koth drops items on ground and only capping faction can pick them up (?)
+>switch chorus cd to playerteleportevent instead of itemconsume (?)
+>toggle for cancelled faction member damage in chat
+>buff shellmet to diamond or netherite level
+>f roster limit (?)
+>disable laby fabric
+>playerbucketevent causing plugin to disable on startup because this api is made by knuckle dragging retards

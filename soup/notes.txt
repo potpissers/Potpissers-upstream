@@ -1,0 +1,2 @@
+move sharpness revert to upstream
+soup: doing the full eat animation might be nice, huge pain the ass though

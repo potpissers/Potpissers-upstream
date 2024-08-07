@@ -1,0 +1,32 @@
+giant agro needs to change so that it cant be safe spotted
+>minez chorus fruit gives glowing
+>bandits get attacked by wolves, heroes get free wolves, neutral can tame wolves
+>overencumbered shulkers get randomly dropped
+?check if playerEntity setkiller meme works
+
+>bandits can see hero death locations and last seen etc. bandits can see hero tag locations and vice versa
+>upstream player zombie and make it work with /mzkill + special koths etc
+>cubecorechest stacks kollusion items
+>kollusion serialize playerzombies
+>giant death causes announcement
+>only disable alts near area
+>beetroot creates red dye, just disable it probably
+>scale bleed with damage taken (?)
+>handle piglin explosion better
+>make loot chest split stacks
+>handle mzspawn checking if players are nearby
+>handle right click bottle on dirt
+>maybe getting tagged does the ip ban instead of dying, maybe make the ban last for the duration of the combat tag
+>handle piglin in spawn town
+>handle potion arrows
+    >stacks up equivalent length to speed pot etc, can be used as long as cooldown isn't surpassing speed pot length
+>listen for when giant becomes unloaded and teleport it
+>giant stomp: iterate over highest blocks or blocks at giant's ground level, explode. maybe jumping should be good, or shield
+>make respawnevent handle removing bandit if it's expired
+>reset hydtration timer if surpassing 20 hydtration
+>probably need to have buffed regen for crapples nad non-buffed regen for regen pots (?)
+>make hero
+>make player zombie revive meme
+>impl cardinal directions for local chat
+
+>make smite do sharpness particles (?)

@@ -1,0 +1,116 @@
+>grapples dont fuckin break (?)
+>gravel falling in claims
+>pulling fishhook player should re-tag, right now it doesnt tag ever since the hit is canceleld
+>endermen moving blocks
+
+>unclaiming postgres event and leaving the claim throws
+>pulling non-players combat tags
+>make link-only messages be urls if youtube etc
+>Ping based potions -> current ms is used to determine when potions are helped to splash
+>shulker can be placed inside of other shulker, it just calculates it's items to make sure the space isn't infinite
+>finish tip formatting
+>add config + ladder for vanilla slow falling
+>>move piglin messaging party to upstream
+>impl party mass tp
+>maybe allies refresh tag timer but don't benefit from it (?)
+>make warps config option
+>impl singled player enemy/ally
+>world-download runescape map play.gameslabs.net
+>spoof player health
+>give glist perms
+>get illegal items command + add 64 stack of pearls to hub kit
+>make serverData sign
+>make donation interface in-game
+>make it so that if a player doesnt log in before their revive, it can be revoked, and it just gives the player the life otherwise
+>make proxy endpoint for getting network player ip for reviving
+>add difficulty so serveradat
+>make supply drop track picking up the items as percentages of one chest, and dying removes the stat and continue tracking the items
+>make /hub etc (?) kick from network if hubi sdown
+>handle cubecore.potpissers.com etc. not defaulting to hub
+>make helpop be network-wide and log etc
+>make /hub relog you etc
+>make attack speed on mobs be more lenient -> same kill time if you click fast == just more dura if you slow click, worst case just have a command for this
+>disable alternate keepalive and use  hub tcpshield on low-utilization servers meme
+>make shulkers placed in claims only openable by placer meme or right-click gui
+>pulling doesnt tag
+>fake blocks placed during duels meme
+>./discord command
+>cancel splash potion particles
+>cancel entity collision for duelprojectiles
+>make warping/spawning update claimcoordinate
+>Via-fags can join and /duel only meme
+>handle respawn claim
+>handle claim in teleprot
+>./save tracks loaddefault and lets you  save kit preferences, cubecore kit hashet
+>remake bukkittask on doorupdatescoreboardtask so that the timer is instant
+>unath accounts + viarewind hub access
+>disallow spectators from seeing enemy inventories if fight isnt over
+>harming cd reduction meme
+>set up rsync
+>bow kb bug fix on players
+>splashes shouldnt work without speed/sprinting (gl)
+>test anti xray radius meme
+>Auto restart meme: no tags, certain time, certain player count
+>Async tmux console webhook
+>make sure mobs cram (max-entity-collisions paper-world)
+>>add /potpissersbutcher etc -> removes hostile currently-burning daylight-burning mobs
+>make servers announce when back online
+>cant revoke ally request
+>test cubecore sword damage types sweeping edge meme
+>test that getdamage is just the attribute but crit modifier taken into account
+>check last stand particles
+
+>block entities can be broken
+>Make respawn/teleport update currentclaim
+>make fighttracker keep track of who started the fight
+>slight cd difference based on grapple distance, very slight
+>grapple buffer isn't working
+>handle harming cd percentage meme
+>(?) timers continue until leaving the starting location, moving/getting hurt only resets the timer aka /togglespawn
+>find a nice way to spawn particles around player signaling effect
+>upstream rogue hit meme for use in cubecore swords
+>use le..heal in glistering melon class effect
+>casino
+>MAKE SELF shootable in spawn, probably make it still not damage you
+>/f invites
+>all chat rally
+>fight tracker -> handle player being able to join, but fight isn't. maybe multiple active fights
+>impl muted player limit
+>impl party invitealllff
+>if you get hit, you can hit the person who hit you for 15s
+>impl anticlean strict
+>impl changing global auto-anticlean settings
+>impl fight anticlean command
+>impl party anticlean setting
+>make ready check
+>phantom blade on mobs out of combat refunds cd (?
+>ktoh bows dont need arrow
+>/spawntoggle etc
+>bow kill lore don't work
+>killstreak leaderboard
+>party/faction killstreaks
+>impl -> player last seen
+>update-pathfinding-on-block-update paper-world
+>add party setwarp timer
+>enable grim experimental checks
+>disable end dragon respawn pufferfish?
+>do something about spawn flying
+>Spawn 3d claim hashset? With protected warzone real claim
+>scoreboard.clearSlot(DisplaySlot.SIDEBAR);
+>tpa arg needs to see the timer + cancel when moving
+>add player list team for dueling players
+>>only use .splashentity with non-nerfed pots if .splash is similar
+>>badlion lms
+>all supply drop chests spawn facing the same way
+>make it so you pvp flag yourself when you hit someone in hub
+>donors get /disguise
+>rank tied to ip
+>finish live updates
+>viarewind does not work
+producer prefix (?)
+>add badges + add them to kollusion prefixes
+>make boolean switch so that tips dont spam
+>make tips not show for playerdatas if they haven't seen the initial one yet
+>serverdata isexceptionshutdownable
+>use viaversion api and integrate with serverdata
+>allow players to pick timezone
