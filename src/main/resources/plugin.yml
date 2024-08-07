@@ -1,0 +1,4 @@
+name: Potpissers-default
+version: '${project.version}'
+main: com.memeasaur.potpissersdefault.Potpissers_default
+api-version: '1.21'
